@@ -623,3 +623,13 @@ demangles!(
     _ZN4glslL7combineIhLi2EEEDvmlT0_Li4E_T_DvT0__S1_S3_S3_S3_,
     "unsigned char __vector((2)*(4)) glsl::combine<unsigned char, 2>(unsigned char __vector(2), unsigned char __vector(2), unsigned char __vector(2), unsigned char __vector(2))"
 );
+
+demangles!(
+    _Z14WasmMemoryCopyIPhPDoFPvS1_PKvmEjEiP9JSContextT_mT1_S9_S9_T0_,
+    "int WasmMemoryCopy<unsigned char*, void* (*)(void*, void const*, unsigned long) noexcept, unsigned int>(JSContext*, unsigned char*, unsigned long, unsigned int, unsigned int, unsigned int, void* (*)(void*, void const*, unsigned long) noexcept)"
+);
+
+demangles!(
+    _ZN7mozilla10extensions7AtomSet3GetIXadsoPKcL_ZNS0_16WILDCARD_SCHEMESEEEEEE8nsresultR6RefPtrIS1_E,
+    "nsresult mozilla::extensions::AtomSet::Get<&(mozilla::extensions::WILDCARD_SCHEMES.<char const* at offset 0>)>(RefPtr<mozilla::extensions::AtomSet>&)"
+);

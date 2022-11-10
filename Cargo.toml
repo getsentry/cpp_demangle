@@ -10,7 +10,7 @@ license = "MIT OR Apache-2.0"
 name = "cpp_demangle"
 readme = "./README.md"
 repository = "https://github.com/gimli-rs/cpp_demangle"
-version = "0.3.5"
+version = "0.4.0"
 edition = "2018"
 
 [badges]
@@ -31,7 +31,7 @@ optional = true
 version = "0.12.0"
 
 [dev-dependencies]
-clap = { version = "3.1", features = ["derive"] }
+clap = { version = "4.0", features = ["derive"] }
 diff = "0.1.11"
 
 [features]
@@ -54,13 +54,6 @@ run_libiberty_tests = []
 
 # Enable fuzzing support. This is for internal use only.
 fuzz = ["afl"]
-
-# DEPRECATED. Don't use these features, they do nothing.
-#
-# TODO: remove on next breaking version bump.
-nightly = []
-cppfilt = []
-
 
 [profile.release]
 debug = true
